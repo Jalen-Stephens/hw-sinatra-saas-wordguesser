@@ -58,12 +58,12 @@ describe WordGuesserGame do
         guess_several_letters(@game, 'aq')
       end
 
-      it 'does not change correct guess list', pending: true do
+      it 'does not change correct guess list' do
         @game.guess('a')
         expect(@game.guesses).to eq('a')
       end
 
-      it 'does not change wrong guess list', pending: true do
+      it 'does not change wrong guess list' do
         @game.guess('q')
         expect(@game.wrong_guesses).to eq('q')
       end
